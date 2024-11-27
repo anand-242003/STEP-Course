@@ -199,8 +199,27 @@
         .rounded-logo:hover {
             transform: scale(1.1);
         }
-
-
+        body {
+            background: linear-gradient(45deg, #f0f4f8 0%, #f4f7fa 100%);
+            background-attachment: fixed;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(rgba(52, 152, 219, 0.05) 1px, transparent 1px),
+                radial-gradient(rgba(44, 62, 149, 0.05) 1px, transparent 1px);
+            background-position: 0 0, 25px 25px;
+            background-size: 50px 50px;
+            opacity: 0.5;
+            z-index: -1;
+        }
+        
     </style>
 </head>
 <body>
@@ -210,17 +229,21 @@
         <h2 class="section-title">Empowering Youth Through Digital Learning and Content Creation</h2>
         
         <div class="projects-grid">
-            <div class="project-card">
-                <h3>Student Portal</h3>
+            <a href="student.html"  style="text-decoration: none;">
+            <div class="project-card"> <h3>Student Portal</h3>
                 <img src="https://img.icons8.com/?size=100&id=48237&format=png&color=2c3e95">
-                <p>Access your courses, track progress, and manage learning resources</p>
+                <p style="text-decoration: none; color: var(--text-color);">Access your courses, track progress, and manage learning resources</p>
             </div>
+            </a>
+
+            <a href="teacher.html" style="text-decoration: none;">
             
             <div class="project-card">
                 <h3>Instructor Dashboard</h3>
                 <img src="https://img.icons8.com/?size=100&id=38HJBFwphJ3I&format=png&color=2c3e95">
                 <p>Create, manage, and monitor your educational content</p>
             </div>
+           </a>
             
             <a href="school.html" style="text-decoration: none;"><div class="project-card">
                 <h3>Register Institution</h3>
