@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP LEARNING PLATFORM by AM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e95;
+            --secondary-color: #3498db;
+            --background-color: #f0f4f8;
+            --text-color: #2d3748;
+            --card-background: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .text {
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            text-transform: uppercase;
+        }
+
+        #projects {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-background);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-color);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .project-card img {
+            max-width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .middle_bkl{
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none ;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            font-family: Arial, sans-serif;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        .footer-logo img {
+            width: 200px;
+        }
+        
+        .footer-logo p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--text-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links ul li {
+            margin: 8px 0;
+        }
+        
+        .footer-links ul li a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-size: 14px;
+        }
+        
+        .footer-links ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-social .social-icons {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+        }
+        
+        .footer-social .social-icons a {
+            color: var(--background-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-social .social-icons a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid var(--secondary-color);
+            padding: 10px 20px 0;
+            font-size: 12px;
+            color: var(--background-color);
+        }
+        .rounded-logo {
+            
+            height: auto;
+            border-radius: 50px;
+            
+            
+            border: 3px solid var(--card-background);
+            transition: transform 0.3s;
+        }
+        
+        .rounded-logo:hover {
+            transform: scale(1.1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <span class="text">STEP LEARNING</span>
+    
+    <section id="projects">
+        <h2 class="section-title">Empowering Youth Through Digital Learning and Content Creation</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Student Portal</h3>
+                <img src="https://img.icons8.com/?size=100&id=48237&format=png&color=2c3e95">
+                <p>Access your courses, track progress, and manage learning resources</p>
+            </div>
+            
+            <div class="project-card">
+                <h3>Instructor Dashboard</h3>
+                <img src="https://img.icons8.com/?size=100&id=38HJBFwphJ3I&format=png&color=2c3e95">
+                <p>Create, manage, and monitor your educational content</p>
+            </div>
+            
+            <a href="school.html" style="text-decoration: none;"><div class="project-card">
+                <h3>Register Institution</h3>
+                <img src="https://img.icons8.com/?size=100&id=64774&format=png&color=2c3e95">
+                <p  style="text-decoration: none; color: var(--text-color);" >Detailed insights into learning progress and performance</p>
+            </div></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <section class="middle_bkl">
+        <a href="https://incredibles.dev" class="btn" target="_blank">
+            Explore STEP Learning
+        </a>
+        
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image.png" alt="Company Logo" class="rounded-logo">
+                
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 STEP. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
